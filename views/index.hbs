@@ -1,0 +1,14 @@
+<h1>Grocery List</h1>
+
+<ul id='list'>
+  {{#each groceries }}
+  <li>{{ this.name }}</li><br>
+  {{/each}}
+</ul>
+
+<a href="/groceries/new">Add a Grocery Item</a>
+<br>
+
+<form action="/groceries" method="post">
+  <input type="submit" id='new-item' value="Add Random Item">
+</form>
